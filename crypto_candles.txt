@@ -1,6 +1,6 @@
 # Crypto Candles — bitFlyer (ETH/JPY, BTC/JPY)
 
-generated : 2026-10-16T07:16:22Z  (JST 2026-10-16 16:16)
+generated : 2026-10-16T07:31:40Z  (JST 2026-10-16 16:31)
 source    : bitFlyer Lightning public API — candles built from execution history.
             bitFlyer publishes no OHLC endpoint, so bars are aggregated from the
             raw trade feed. Where bitFlyer history does not reach back far enough,
@@ -20,12 +20,11 @@ IMPORTANT — how to read volume:
 Bars are listed oldest first. The final bar of each series is the most recent
 CLOSED bar; the bar currently forming is not included.
 
-## BTC/JPY   last 12,988,000   15m +0.00%  1h +0.07%  24h +1.65%
+## BTC/JPY   last 12,989,616   15m +0.01%  1h +0.07%  24h +1.65%
 
 ### BTC 15m (96 bars = 24h)
 source: bitFlyer
 time,open,high,low,close,volume
-2026-10-15T07:15,12790497,12818793,12790497,12812892,2.1966
 2026-10-15T07:30,12812893,12854979,12812892,12851799,2.8416
 2026-10-15T07:45,12851019,12874054,12831035,12861456,1.2180
 2026-10-15T08:00,12864647,12870444,12813469,12821485,5.6110
@@ -121,11 +120,11 @@ time,open,high,low,close,volume
 2026-10-16T06:30,12955988,12982074,12954745,12968770,1.2809
 2026-10-16T06:45,12968770,13000000,12968770,12987847,0.1666
 2026-10-16T07:00,12981766,12994264,12972443,12988000,0.9153
+2026-10-16T07:15,12988000,13000000,12980453,12989616,3.4367
 
 ### BTC 30m (96 bars = 2d)
 source: bitFlyer
 time,open,high,low,close,volume
-2026-10-14T07:00,13203100,13234599,13188811,13210690,3.4292
 2026-10-14T07:30,13208592,13232208,13203316,13231797,1.9436
 2026-10-14T08:00,13235000,13309999,13235000,13269605,12.2480
 2026-10-14T08:30,13267339,13273028,13200203,13209831,7.2834
@@ -221,6 +220,7 @@ time,open,high,low,close,volume
 2026-10-16T05:30,12979804,12983467,12956132,12979179,2.8581
 2026-10-16T06:00,12969632,12974290,12950643,12950643,1.0776
 2026-10-16T06:30,12955988,13000000,12954745,12987847,1.4475
+2026-10-16T07:00,12981766,13000000,12972443,12989616,4.3519
 
 ### BTC 1h (120 bars = 5d)
 source: GMO (basis-adjusted to bitFlyer) 68, bitFlyer 52

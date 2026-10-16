@@ -1,6 +1,6 @@
 # Crypto Candles — bitFlyer (ETH/JPY, BTC/JPY)
 
-generated : 2026-10-16T17:07:51Z  (JST 2026-10-17 02:07)
+generated : 2026-10-16T17:23:00Z  (JST 2026-10-17 02:23)
 source    : bitFlyer Lightning public API — candles built from execution history.
             bitFlyer publishes no OHLC endpoint, so bars are aggregated from the
             raw trade feed. Where bitFlyer history does not reach back far enough,
@@ -20,12 +20,11 @@ IMPORTANT — how to read volume:
 Bars are listed oldest first. The final bar of each series is the most recent
 CLOSED bar; the bar currently forming is not included.
 
-## BTC/JPY   last 12,884,585   15m -0.04%  1h +0.25%  24h -0.72%
+## BTC/JPY   last 12,837,437   15m -0.37%  1h +0.25%  24h -0.72%
 
 ### BTC 15m (96 bars = 24h)
 source: bitFlyer
 time,open,high,low,close,volume
-2026-10-15T17:00,12980301,13007982,12971952,13007982,0.7582
 2026-10-15T17:15,13007982,13058472,13007982,13027066,0.9755
 2026-10-15T17:30,13027316,13048749,13021377,13037969,0.8473
 2026-10-15T17:45,13036729,13044899,13025186,13025186,0.6015
@@ -121,6 +120,7 @@ time,open,high,low,close,volume
 2026-10-16T16:15,12893763,12907501,12878637,12900212,1.0364
 2026-10-16T16:30,12908675,12909700,12889911,12889911,0.9398
 2026-10-16T16:45,12905273,12905673,12877117,12884585,0.4737
+2026-10-16T17:00,12884616,12886865,12822661,12837437,3.6478
 
 ### BTC 30m (96 bars = 2d)
 source: bitFlyer
@@ -470,12 +470,11 @@ time,open,high,low,close,volume
 2026-10-16T08:00,13000992,13097500,12924959,13057621,25.4075
 2026-10-16T12:00,13053642,13054987,12844108,12851929,40.4902
 
-## ETH/JPY   last 384,702   15m -0.31%  1h +0.22%  24h +0.00%
+## ETH/JPY   last 381,398   15m -0.86%  1h +0.22%  24h +0.00%
 
 ### ETH 15m (96 bars = 24h)
 source: bitFlyer
 time,open,high,low,close,volume
-2026-10-15T17:00,384820,385920,384701,385920,14.3955
 2026-10-15T17:15,385995,388550,385995,386886,17.7592
 2026-10-15T17:30,386886,387415,386388,387070,5.5127
 2026-10-15T17:45,387070,387107,386623,386787,0.6741
@@ -571,6 +570,7 @@ time,open,high,low,close,volume
 2026-10-16T16:15,385613,386551,385397,386551,19.5873
 2026-10-16T16:30,386356,386356,385911,385911,2.0649
 2026-10-16T16:45,385911,386116,384460,384702,3.0732
+2026-10-16T17:00,384862,384980,381398,381398,12.3917
 
 ### ETH 30m (96 bars = 2d)
 source: bitFlyer

@@ -1,6 +1,6 @@
 # Crypto Candles — bitFlyer (ETH/JPY, BTC/JPY)
 
-generated : 2026-10-16T10:33:32Z  (JST 2026-10-16 19:33)
+generated : 2026-10-16T10:48:41Z  (JST 2026-10-16 19:48)
 source    : bitFlyer Lightning public API — candles built from execution history.
             bitFlyer publishes no OHLC endpoint, so bars are aggregated from the
             raw trade feed. Where bitFlyer history does not reach back far enough,
@@ -20,12 +20,11 @@ IMPORTANT — how to read volume:
 Bars are listed oldest first. The final bar of each series is the most recent
 CLOSED bar; the bar currently forming is not included.
 
-## BTC/JPY   last 12,952,327   15m +0.11%  1h -0.32%  24h +1.16%
+## BTC/JPY   last 12,979,672   15m +0.21%  1h -0.32%  24h +1.16%
 
 ### BTC 15m (96 bars = 24h)
 source: bitFlyer
 time,open,high,low,close,volume
-2026-10-15T10:30,12779061,12804218,12767913,12767913,0.6649
 2026-10-15T10:45,12763916,12783703,12755220,12780960,0.7707
 2026-10-15T11:00,12780030,12782644,12750000,12782644,1.8707
 2026-10-15T11:15,12783338,12789000,12775644,12785705,0.6717
@@ -121,6 +120,7 @@ time,open,high,low,close,volume
 2026-10-16T09:45,12974399,12980399,12951630,12957638,0.9134
 2026-10-16T10:00,12954179,12957630,12924959,12938727,1.6012
 2026-10-16T10:15,12937077,12960374,12932574,12952327,0.5122
+2026-10-16T10:30,12952330,12992583,12952330,12979672,1.0337
 
 ### BTC 30m (96 bars = 2d)
 source: bitFlyer

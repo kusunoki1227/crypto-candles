@@ -1,6 +1,6 @@
 # Crypto Candles — bitFlyer (ETH/JPY, BTC/JPY)
 
-generated : 2026-10-20T03:02:21Z  (JST 2026-10-20 12:02)
+generated : 2026-10-20T03:17:30Z  (JST 2026-10-20 12:17)
 source    : bitFlyer Lightning public API — candles built from execution history.
             bitFlyer publishes no OHLC endpoint, so bars are aggregated from the
             raw trade feed. Where bitFlyer history does not reach back far enough,

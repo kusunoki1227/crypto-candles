@@ -1,0 +1,11 @@
+# crypto-analysis 公開ファイル（bitFlyer BTC/JPY・ETH/JPY 現物の分析）
+15分ごと（毎時 1/16/31/46 分）に更新。CDN キャッシュで最大10分古いことがある。
+各ファイルの生成時刻・データ取得時刻を確認してから使うこと。
+
+https://kusunoki1227.github.io/crypto-candles/backtest_results.csv  戦略A〜Gのウォークフォワード検証の成績
+https://kusunoki1227.github.io/crypto-candles/candles_BTC_JPY.csv  BTC/JPY のローソク足（5m〜1d、指標列つき、is_closed=false は未確定足）
+https://kusunoki1227.github.io/crypto-candles/candles_ETH_JPY.csv  ETH/JPY のローソク足
+https://kusunoki1227.github.io/crypto-candles/crypto_candles.txt  旧URL。latest_analysis.txt と同じ内容
+https://kusunoki1227.github.io/crypto-candles/data_quality.txt  データ品質レポート
+https://kusunoki1227.github.io/crypto-candles/latest_analysis.json  同じ内容の JSON
+https://kusunoki1227.github.io/crypto-candles/latest_analysis.txt  最新の分析と売買判断（ChatGPT に読ませるならまずこれ）

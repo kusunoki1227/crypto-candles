@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29 07:01",
+  "generated_at": "2026-10-29 07:16",
   "disclaimer": "個人の検証用の機械的な出力。投資助言ではない。取引所への注文は行わない。",
   "rules": {
     "buy_requires": "検証で信頼性『中』の戦略のシグナルが最新確定足で出ている・手数料込みRR>=1.5・中期が下降でない・データ正常",
@@ -18,13 +18,13 @@
       "product": "BTC_JPY",
       "latest_closed": {
         "5m": {
-          "bar": "2026-10-29 06:55",
-          "close": 12834130.0,
+          "bar": "2026-10-29 07:10",
+          "close": 12828728.0,
           "source": "bitflyer"
         },
         "15m": {
-          "bar": "2026-10-29 06:45",
-          "close": 12834130.0,
+          "bar": "2026-10-29 07:00",
+          "close": 12828728.0,
           "source": "bitflyer"
         },
         "30m": {
@@ -50,14 +50,14 @@
       },
       "trend_by_timeframe": {
         "5m": {
-          "label": "上昇",
-          "score": 4,
+          "label": "やや上昇",
+          "score": 3,
           "structure": "高値切り下げ・安値切り上げ（収束）"
         },
         "15m": {
           "label": "上昇",
-          "score": 5,
-          "structure": "高値・安値とも切り上げ（上昇構造）"
+          "score": 4,
+          "structure": "高値切り下げ・安値切り上げ（収束）"
         },
         "30m": {
           "label": "上昇",
@@ -565,7 +565,7 @@
           "name": "15分足の安値切り上げ",
           "timeframe": "15m",
           "params": "rr=3.0,htf_min=0",
-          "bars_ago": 1,
+          "bars_ago": 2,
           "is_latest_bar": false,
           "signal_bar": "2026-10-29 06:30",
           "close": 12810000,
@@ -702,19 +702,19 @@
         "E 4時間足のトレンド転換 のシグナルあり。ただし 検証で優位性が未確認（低（取引 20 回 < 30。統計的に判断できない））",
         "この銘柄で、ウォークフォワード検証で期待値が正と確認できた戦略が1つも無い"
       ],
-      "data_as_of": "2026-10-29 07:00"
+      "data_as_of": "2026-10-29 07:15"
     },
     "ETH_JPY": {
       "product": "ETH_JPY",
       "latest_closed": {
         "5m": {
-          "bar": "2026-10-29 06:55",
-          "close": 373047.0,
+          "bar": "2026-10-29 07:10",
+          "close": 372366.0,
           "source": "bitflyer"
         },
         "15m": {
-          "bar": "2026-10-29 06:45",
-          "close": 373047.0,
+          "bar": "2026-10-29 07:00",
+          "close": 372366.0,
           "source": "bitflyer"
         },
         "30m": {
@@ -740,14 +740,14 @@
       },
       "trend_by_timeframe": {
         "5m": {
-          "label": "上昇",
-          "score": 4,
+          "label": "やや上昇",
+          "score": 3,
           "structure": "高値切り下げ・安値切り上げ（収束）"
         },
         "15m": {
           "label": "上昇",
-          "score": 5,
-          "structure": "高値・安値とも切り上げ（上昇構造）"
+          "score": 4,
+          "structure": "高値切り下げ・安値切り上げ（収束）"
         },
         "30m": {
           "label": "上昇",
@@ -1315,36 +1315,6 @@
       ],
       "strategy_signals_recent": [
         {
-          "strategy": "B_15m",
-          "name": "15分足の安値切り上げ",
-          "timeframe": "15m",
-          "params": "rr=3.0,htf_min=0",
-          "bars_ago": 2,
-          "is_latest_bar": false,
-          "signal_bar": "2026-10-29 06:15",
-          "close": 372285,
-          "stop": 370265,
-          "target": 378344,
-          "max_hold_bars": 96,
-          "backtest": {
-            "trades": 229,
-            "win_rate": 0.306,
-            "expectancy_r": -0.824,
-            "expectancy_jpy": -3358.0,
-            "ci95_r_low": -1.019,
-            "ci95_r_high": -0.635,
-            "profit_factor": 0.43,
-            "max_drawdown_pct": 96.11,
-            "p_vs_random": 0.535,
-            "edge_vs_random_r": -0.009,
-            "reliability": "低（検証期間で期待値が明確に負）",
-            "oos_from": "2026-01-20",
-            "oos_to": "2026-10-17",
-            "available": true,
-            "has_edge": false
-          }
-        },
-        {
           "strategy": "C",
           "name": "抵抗線突破後の押し目買い",
           "timeframe": "1h",
@@ -1426,7 +1396,7 @@
         "E 4時間足のトレンド転換 のシグナルあり。ただし 検証で優位性が未確認（低（取引 21 回 < 30。統計的に判断できない））",
         "この銘柄で、ウォークフォワード検証で期待値が正と確認できた戦略が1つも無い"
       ],
-      "data_as_of": "2026-10-29 07:00"
+      "data_as_of": "2026-10-29 07:15"
     }
   },
   "btc_vs_eth": {
@@ -1439,12 +1409,12 @@
     "relatively_stronger_30d": "BTC（ETH/BTC 比の30日変化 -8.7%）",
     "by_product": {
       "BTC_JPY": {
-        "trend_score_sum": 21,
+        "trend_score_sum": 19,
         "decision": "見送り",
         "atr_pct_1h": 0.478
       },
       "ETH_JPY": {
-        "trend_score_sum": 15,
+        "trend_score_sum": 13,
         "decision": "見送り",
         "atr_pct_1h": 0.683
       }

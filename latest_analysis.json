@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30 15:46",
+  "generated_at": "2026-10-30 16:01",
   "disclaimer": "個人の検証用の機械的な出力。投資助言ではない。取引所への注文は行わない。",
   "rules": {
     "buy_requires": "検証で信頼性『中』の戦略のシグナルが最新確定足で出ている・手数料込みRR>=1.5・中期が下降でない・データ正常",
@@ -18,23 +18,23 @@
       "product": "BTC_JPY",
       "latest_closed": {
         "5m": {
-          "bar": "2026-10-30 15:40",
-          "close": 12369435.0,
+          "bar": "2026-10-30 15:55",
+          "close": 12384807.0,
           "source": "bitflyer"
         },
         "15m": {
-          "bar": "2026-10-30 15:30",
-          "close": 12369435.0,
+          "bar": "2026-10-30 15:45",
+          "close": 12384807.0,
           "source": "bitflyer"
         },
         "30m": {
-          "bar": "2026-10-30 15:00",
-          "close": 12395874.0,
+          "bar": "2026-10-30 15:30",
+          "close": 12384807.0,
           "source": "bitflyer"
         },
         "1h": {
-          "bar": "2026-10-30 14:00",
-          "close": 12369896.0,
+          "bar": "2026-10-30 15:00",
+          "close": 12384807.0,
           "source": "bitflyer"
         },
         "4h": {
@@ -50,13 +50,13 @@
       },
       "trend_by_timeframe": {
         "5m": {
-          "label": "上昇",
-          "score": 4,
-          "structure": "高値・安値とも切り上げ（上昇構造）"
+          "label": "やや上昇",
+          "score": 3,
+          "structure": "高値切り下げ・安値切り上げ（収束）"
         },
         "15m": {
-          "label": "やや下降",
-          "score": -2,
+          "label": "横ばい・方向感なし",
+          "score": 0,
           "structure": "高値・安値とも切り下げ（下降構造）"
         },
         "30m": {
@@ -83,7 +83,7 @@
       "multi_timeframe": {
         "by_timeframe": {
           "5m": "上昇",
-          "15m": "下降",
+          "15m": "方向感なし",
           "30m": "下降",
           "1h": "下降",
           "4h": "下降",
@@ -96,7 +96,7 @@
         },
         "aligned": false,
         "conflicts": [
-          "5m足は上昇、15m/30m/1h/4h足は下降。上位足の下降の中の戻り（反発）の可能性"
+          "5m足は上昇、30m/1h/4h足は下降。上位足の下降の中の戻り（反発）の可能性"
         ]
       },
       "levels_1h": {
@@ -106,8 +106,8 @@
             "touches": 1,
             "last_touch": 1793325600,
             "last_touch_jst": "2026-10-30 11:00",
-            "bars_since_touch": 3,
-            "distance_atr": -2.87,
+            "bars_since_touch": 4,
+            "distance_atr": -3.09,
             "points": [
               {
                 "time": 1793325600,
@@ -124,8 +124,8 @@
             "touches": 2,
             "last_touch": 1792983600,
             "last_touch_jst": "2026-10-26 12:00",
-            "bars_since_touch": 98,
-            "distance_atr": 0.55,
+            "bars_since_touch": 99,
+            "distance_atr": 0.44,
             "points": [
               {
                 "time": 1792854000,
@@ -146,8 +146,8 @@
             "touches": 6,
             "last_touch": 1793095200,
             "last_touch_jst": "2026-10-27 19:00",
-            "bars_since_touch": 67,
-            "distance_atr": 1.29,
+            "bars_since_touch": 68,
+            "distance_atr": 1.21,
             "points": [
               {
                 "time": 1792918800,
@@ -188,19 +188,13 @@
             ]
           },
           {
-            "price": 12605963.0,
-            "touches": 6,
+            "price": 12602325.0,
+            "touches": 5,
             "last_touch": 1793278800,
             "last_touch_jst": "2026-10-29 22:00",
-            "bars_since_touch": 16,
-            "distance_atr": 1.97,
+            "bars_since_touch": 17,
+            "distance_atr": 1.88,
             "points": [
-              {
-                "time": 1792796400,
-                "time_jst": "2026-10-24 08:00",
-                "price": 12624154.0,
-                "kind": "low"
-              },
               {
                 "time": 1792832400,
                 "time_jst": "2026-10-24 18:00",
@@ -361,9 +355,9 @@
           "target": 12524788,
           "invalidation": "終値が支持線 12,026,017 を割る",
           "historical_probability": {
-            "value": 0.721,
-            "all_periods": 0.724,
-            "meaning": "24時間以内に 12,435,947（+0.53%）に先に届いた割合"
+            "value": 0.781,
+            "all_periods": 0.782,
+            "meaning": "24時間以内に 12,435,947（+0.41%）に先に届いた割合"
           }
         },
         {
@@ -372,41 +366,41 @@
           "target": null,
           "invalidation": "どちらかの線を終値で抜ける",
           "historical_probability": {
-            "value": 0.139,
-            "all_periods": 0.156,
+            "value": 0.104,
+            "all_periods": 0.121,
             "meaning": "24時間以内にどちらにも届かなかった割合"
           }
         },
         {
           "name": "弱気",
           "condition": "1時間足の終値が支持線 12,026,017 を割る",
-          "target": 11786533,
+          "target": 11794067,
           "invalidation": "抵抗線 12,435,947 を回復",
           "historical_probability": {
-            "value": 0.14,
-            "all_periods": 0.12,
-            "meaning": "24時間以内に 12,026,017（-2.78%）に先に届いた割合"
+            "value": 0.115,
+            "all_periods": 0.097,
+            "meaning": "24時間以内に 12,026,017（-2.9%）に先に届いた割合"
           }
         }
       ],
       "base_rates": {
         "n": 4384,
-        "up_first": 0.721,
-        "down_first": 0.14,
-        "neither": 0.139,
+        "up_first": 0.781,
+        "down_first": 0.115,
+        "neither": 0.104,
         "horizon_hours": 24,
-        "up_pct": 0.53,
-        "down_pct": 2.78,
+        "up_pct": 0.41,
+        "down_pct": 2.9,
         "condition": "4h下降",
         "kind": "過去頻度（GMO・bitFlyer の1時間足 約400日。時点が重なるので独立なサンプル数は n より少ない）",
         "unconditional": {
-          "n": 9455,
-          "up_first": 0.724,
-          "down_first": 0.12,
-          "neither": 0.156,
+          "n": 9456,
+          "up_first": 0.782,
+          "down_first": 0.097,
+          "neither": 0.121,
           "horizon_hours": 24,
-          "up_pct": 0.53,
-          "down_pct": 2.78,
+          "up_pct": 0.41,
+          "down_pct": 2.9,
           "condition": "全時点",
           "kind": "過去頻度（GMO・bitFlyer の1時間足 約400日。時点が重なるので独立なサンプル数は n より少ない）"
         }
@@ -417,17 +411,17 @@
           "strategy": "A",
           "trigger": "1時間足の安値が 12,026,017.0 付近（+0.3ATR 以内）まで下げ、陽線で線の上で引ける",
           "plan": {
-            "entry": 12061940,
-            "stop": 11906275,
+            "entry": 12060810,
+            "stop": 11910042,
             "target": 12435947,
-            "stop_pct": 1.34,
-            "target_pct": 3.05,
-            "amount_jpy": 597071,
-            "qty": 0.049476,
-            "pnl_at_target_jpy": 16387,
-            "pnl_at_stop_jpy": -10367,
-            "net_rr": 1.58,
-            "fees_round_trip_jpy": 1791,
+            "stop_pct": 1.3,
+            "target_pct": 3.06,
+            "amount_jpy": 615663,
+            "qty": 0.051021,
+            "pnl_at_target_jpy": 16957,
+            "pnl_at_stop_jpy": -10442,
+            "net_rr": 1.62,
+            "fees_round_trip_jpy": 1847,
             "flags": []
           },
           "backtest": {
@@ -453,17 +447,17 @@
           "strategy": "D",
           "trigger": "1時間足の終値が 12,435,947.0 を ATR×0.1 以上上抜け、出来高が20本平均の2倍以上",
           "plan": {
-            "entry": 12447921,
-            "stop": 12316205,
+            "entry": 12447544,
+            "stop": 12319972,
             "target": 12524788,
-            "stop_pct": 1.11,
+            "stop_pct": 1.07,
             "target_pct": 0.57,
-            "amount_jpy": 722293,
-            "qty": 0.057996,
-            "pnl_at_target_jpy": 1924,
-            "pnl_at_stop_jpy": -10868,
+            "amount_jpy": 744641,
+            "qty": 0.059792,
+            "pnl_at_target_jpy": 2006,
+            "pnl_at_stop_jpy": -10957,
             "net_rr": 0.18,
-            "fees_round_trip_jpy": 2167,
+            "fees_round_trip_jpy": 2234,
             "flags": [
               "手数料込みRR 0.18 < 1.5"
             ]
@@ -491,19 +485,19 @@
           "strategy": "C",
           "trigger": "12,435,947.0 を上抜けた後、10本以内に線の近くまで戻り線の上で引ける",
           "plan": {
-            "entry": 12471870,
-            "stop": 12316205,
+            "entry": 12470740,
+            "stop": 12319972,
             "target": 12524788,
-            "stop_pct": 1.3,
-            "target_pct": 0.37,
-            "amount_jpy": 616581,
-            "qty": 0.049413,
-            "pnl_at_target_jpy": 454,
-            "pnl_at_stop_jpy": -10445,
-            "net_rr": 0.04,
-            "fees_round_trip_jpy": 1850,
+            "stop_pct": 1.26,
+            "target_pct": 0.38,
+            "amount_jpy": 635758,
+            "qty": 0.050954,
+            "pnl_at_target_jpy": 525,
+            "pnl_at_stop_jpy": -10522,
+            "net_rr": 0.05,
+            "fees_round_trip_jpy": 1907,
             "flags": [
-              "手数料込みRR 0.04 < 1.5"
+              "手数料込みRR 0.05 < 1.5"
             ]
           },
           "backtest": {
@@ -534,29 +528,29 @@
         "中期（1h/4h）が下降。現物ロングのみなので逆風",
         "この銘柄で、ウォークフォワード検証で期待値が正と確認できた戦略が1つも無い"
       ],
-      "data_as_of": "2026-10-30 15:45"
+      "data_as_of": "2026-10-30 16:00"
     },
     "ETH_JPY": {
       "product": "ETH_JPY",
       "latest_closed": {
         "5m": {
-          "bar": "2026-10-30 15:40",
-          "close": 353534.0,
+          "bar": "2026-10-30 15:55",
+          "close": 354734.0,
           "source": "bitflyer"
         },
         "15m": {
-          "bar": "2026-10-30 15:30",
-          "close": 353534.0,
+          "bar": "2026-10-30 15:45",
+          "close": 354734.0,
           "source": "bitflyer"
         },
         "30m": {
-          "bar": "2026-10-30 15:00",
-          "close": 354110.0,
+          "bar": "2026-10-30 15:30",
+          "close": 354734.0,
           "source": "bitflyer"
         },
         "1h": {
-          "bar": "2026-10-30 14:00",
-          "close": 352985.0,
+          "bar": "2026-10-30 15:00",
+          "close": 354734.0,
           "source": "bitflyer"
         },
         "4h": {
@@ -628,8 +622,8 @@
             "touches": 1,
             "last_touch": 1793304000,
             "last_touch_jst": "2026-10-30 05:00",
-            "bars_since_touch": 9,
-            "distance_atr": -0.18,
+            "bars_since_touch": 10,
+            "distance_atr": -0.58,
             "points": [
               {
                 "time": 1793304000,
@@ -644,8 +638,8 @@
             "touches": 1,
             "last_touch": 1793322000,
             "last_touch_jst": "2026-10-30 10:00",
-            "bars_since_touch": 4,
-            "distance_atr": -2.47,
+            "bars_since_touch": 5,
+            "distance_atr": -2.93,
             "points": [
               {
                 "time": 1793322000,
@@ -662,8 +656,8 @@
             "touches": 2,
             "last_touch": 1792983600,
             "last_touch_jst": "2026-10-26 12:00",
-            "bars_since_touch": 98,
-            "distance_atr": 1.25,
+            "bars_since_touch": 99,
+            "distance_atr": 0.89,
             "points": [
               {
                 "time": 1792854000,
@@ -684,8 +678,8 @@
             "touches": 6,
             "last_touch": 1793239200,
             "last_touch_jst": "2026-10-29 11:00",
-            "bars_since_touch": 27,
-            "distance_atr": 2.01,
+            "bars_since_touch": 28,
+            "distance_atr": 1.67,
             "points": [
               {
                 "time": 1792918800,
@@ -730,8 +724,8 @@
             "touches": 3,
             "last_touch": 1793278800,
             "last_touch_jst": "2026-10-29 22:00",
-            "bars_since_touch": 16,
-            "distance_atr": 2.82,
+            "bars_since_touch": 17,
+            "distance_atr": 2.51,
             "points": [
               {
                 "time": 1793084400,
@@ -869,9 +863,9 @@
           "target": 362187,
           "invalidation": "終値が支持線 352,152 を割る",
           "historical_probability": {
-            "value": 0.121,
-            "all_periods": 0.131,
-            "meaning": "24時間以内に 358,698（+1.62%）に先に届いた割合"
+            "value": 0.353,
+            "all_periods": 0.373,
+            "meaning": "24時間以内に 358,698（+1.12%）に先に届いた割合"
           }
         },
         {
@@ -880,8 +874,8 @@
           "target": null,
           "invalidation": "どちらかの線を終値で抜ける",
           "historical_probability": {
-            "value": 0.02,
-            "all_periods": 0.025,
+            "value": 0.041,
+            "all_periods": 0.046,
             "meaning": "24時間以内にどちらにも届かなかった割合"
           }
         },
@@ -891,30 +885,30 @@
           "target": 341676,
           "invalidation": "抵抗線 358,698 を回復",
           "historical_probability": {
-            "value": 0.859,
-            "all_periods": 0.845,
-            "meaning": "24時間以内に 352,152（-0.24%）に先に届いた割合"
+            "value": 0.606,
+            "all_periods": 0.581,
+            "meaning": "24時間以内に 352,152（-0.73%）に先に届いた割合"
           }
         }
       ],
       "base_rates": {
-        "n": 4543,
-        "up_first": 0.121,
-        "down_first": 0.859,
-        "neither": 0.02,
+        "n": 4544,
+        "up_first": 0.353,
+        "down_first": 0.606,
+        "neither": 0.041,
         "horizon_hours": 24,
-        "up_pct": 1.62,
-        "down_pct": 0.24,
+        "up_pct": 1.12,
+        "down_pct": 0.73,
         "condition": "4h下降",
         "kind": "過去頻度（GMO・bitFlyer の1時間足 約400日。時点が重なるので独立なサンプル数は n より少ない）",
         "unconditional": {
-          "n": 9455,
-          "up_first": 0.131,
-          "down_first": 0.845,
-          "neither": 0.025,
+          "n": 9456,
+          "up_first": 0.373,
+          "down_first": 0.581,
+          "neither": 0.046,
           "horizon_hours": 24,
-          "up_pct": 1.62,
-          "down_pct": 0.24,
+          "up_pct": 1.12,
+          "down_pct": 0.73,
           "condition": "全時点",
           "kind": "過去頻度（GMO・bitFlyer の1時間足 約400日。時点が重なるので独立なサンプル数は n より少ない）"
         }
@@ -925,19 +919,19 @@
           "strategy": "A",
           "trigger": "1時間足の安値が 352,152.0 付近（+0.3ATR 以内）まで下げ、陽線で線の上で引ける",
           "plan": {
-            "entry": 353527,
-            "stop": 347569,
+            "entry": 353487,
+            "stop": 347701,
             "target": 358698,
-            "stop_pct": 1.76,
-            "target_pct": 1.38,
-            "amount_jpy": 453550,
-            "qty": 1.281903,
-            "pnl_at_target_jpy": 4896,
-            "pnl_at_stop_jpy": -10060,
-            "net_rr": 0.49,
-            "fees_round_trip_jpy": 1361,
+            "stop_pct": 1.72,
+            "target_pct": 1.39,
+            "amount_jpy": 466324,
+            "qty": 1.318155,
+            "pnl_at_target_jpy": 5087,
+            "pnl_at_stop_jpy": -10119,
+            "net_rr": 0.5,
+            "fees_round_trip_jpy": 1399,
             "flags": [
-              "手数料込みRR 0.49 < 1.5"
+              "手数料込みRR 0.50 < 1.5"
             ]
           },
           "backtest": {
@@ -963,19 +957,19 @@
           "strategy": "D",
           "trigger": "1時間足の終値が 358,698.0 を ATR×0.1 以上上抜け、出来高が20本平均の2倍以上",
           "plan": {
-            "entry": 359156,
-            "stop": 354115,
+            "entry": 359143,
+            "stop": 354247,
             "target": 362187,
-            "stop_pct": 1.48,
-            "target_pct": 0.76,
-            "amount_jpy": 539642,
-            "qty": 1.501325,
-            "pnl_at_target_jpy": 2494,
-            "pnl_at_stop_jpy": -10456,
-            "net_rr": 0.24,
-            "fees_round_trip_jpy": 1619,
+            "stop_pct": 1.44,
+            "target_pct": 0.77,
+            "amount_jpy": 554739,
+            "qty": 1.543384,
+            "pnl_at_target_jpy": 2584,
+            "pnl_at_stop_jpy": -10526,
+            "net_rr": 0.25,
+            "fees_round_trip_jpy": 1664,
             "flags": [
-              "手数料込みRR 0.24 < 1.5"
+              "手数料込みRR 0.25 < 1.5"
             ]
           },
           "backtest": {
@@ -1001,19 +995,19 @@
           "strategy": "C",
           "trigger": "358,698.0 を上抜けた後、10本以内に線の近くまで戻り線の上で引ける",
           "plan": {
-            "entry": 360073,
-            "stop": 354115,
+            "entry": 360033,
+            "stop": 354247,
             "target": 362187,
-            "stop_pct": 1.73,
-            "target_pct": 0.51,
-            "amount_jpy": 461561,
-            "qty": 1.280828,
-            "pnl_at_target_jpy": 951,
-            "pnl_at_stop_jpy": -10097,
-            "net_rr": 0.09,
-            "fees_round_trip_jpy": 1385,
+            "stop_pct": 1.69,
+            "target_pct": 0.52,
+            "amount_jpy": 474550,
+            "qty": 1.317018,
+            "pnl_at_target_jpy": 1030,
+            "pnl_at_stop_jpy": -10157,
+            "net_rr": 0.1,
+            "fees_round_trip_jpy": 1424,
             "flags": [
-              "手数料込みRR 0.09 < 1.5"
+              "手数料込みRR 0.10 < 1.5"
             ]
           },
           "backtest": {
@@ -1044,7 +1038,7 @@
         "中期（1h/4h）が下降。現物ロングのみなので逆風",
         "この銘柄で、ウォークフォワード検証で期待値が正と確認できた戦略が1つも無い"
       ],
-      "data_as_of": "2026-10-30 15:45"
+      "data_as_of": "2026-10-30 16:00"
     }
   },
   "btc_vs_eth": {
@@ -1057,14 +1051,14 @@
     "relatively_stronger_30d": "BTC（ETH/BTC 比の30日変化 -9.75%）",
     "by_product": {
       "BTC_JPY": {
-        "trend_score_sum": -11,
+        "trend_score_sum": -10,
         "decision": "見送り",
-        "atr_pct_1h": 0.968
+        "atr_pct_1h": 0.936
       },
       "ETH_JPY": {
         "trend_score_sum": -15,
         "decision": "見送り",
-        "atr_pct_1h": 1.298
+        "atr_pct_1h": 1.255
       }
     },
     "allocation": "どちらにも振り向けない（現金のまま）。両方とも見送り"

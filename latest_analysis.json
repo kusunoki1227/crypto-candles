@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04 02:16",
+  "generated_at": "2026-11-04 02:32",
   "disclaimer": "個人の検証用の機械的な出力。投資助言ではない。取引所への注文は行わない。",
   "rules": {
     "buy_requires": "検証で信頼性『中』の戦略のシグナルが最新確定足で出ている・手数料込みRR>=1.5・中期が下降でない・データ正常",
@@ -18,18 +18,18 @@
       "product": "BTC_JPY",
       "latest_closed": {
         "5m": {
-          "bar": "2026-11-04 02:10",
-          "close": 12300753.0,
+          "bar": "2026-11-04 02:25",
+          "close": 12291704.0,
           "source": "bitflyer"
         },
         "15m": {
-          "bar": "2026-11-04 02:00",
-          "close": 12300753.0,
+          "bar": "2026-11-04 02:15",
+          "close": 12291704.0,
           "source": "bitflyer"
         },
         "30m": {
-          "bar": "2026-11-04 01:30",
-          "close": 12297250.0,
+          "bar": "2026-11-04 02:00",
+          "close": 12291704.0,
           "source": "bitflyer"
         },
         "1h": {
@@ -51,7 +51,7 @@
       "trend_by_timeframe": {
         "5m": {
           "label": "上昇",
-          "score": 5,
+          "score": 4,
           "structure": "高値・安値とも切り上げ（上昇構造）"
         },
         "15m": {
@@ -640,24 +640,24 @@
         "中期（1h/4h）が下降。現物ロングのみなので逆風",
         "この銘柄で、ウォークフォワード検証で期待値が正と確認できた戦略が1つも無い"
       ],
-      "data_as_of": "2026-11-04 02:15"
+      "data_as_of": "2026-11-04 02:30"
     },
     "ETH_JPY": {
       "product": "ETH_JPY",
       "latest_closed": {
         "5m": {
-          "bar": "2026-11-04 02:10",
-          "close": 363557.0,
+          "bar": "2026-11-04 02:25",
+          "close": 363738.0,
           "source": "bitflyer"
         },
         "15m": {
-          "bar": "2026-11-04 02:00",
-          "close": 363557.0,
+          "bar": "2026-11-04 02:15",
+          "close": 363738.0,
           "source": "bitflyer"
         },
         "30m": {
-          "bar": "2026-11-04 01:30",
-          "close": 363555.0,
+          "bar": "2026-11-04 02:00",
+          "close": 363738.0,
           "source": "bitflyer"
         },
         "1h": {
@@ -679,12 +679,12 @@
       "trend_by_timeframe": {
         "5m": {
           "label": "上昇",
-          "score": 5,
-          "structure": "高値・安値とも切り上げ（上昇構造）"
+          "score": 4,
+          "structure": "高値切り下げ・安値切り上げ（収束）"
         },
         "15m": {
           "label": "上昇",
-          "score": 5,
+          "score": 4,
           "structure": "高値・安値とも切り上げ（上昇構造）"
         },
         "30m": {
@@ -1215,8 +1215,8 @@
           "name": "15分足の安値切り上げ",
           "timeframe": "15m",
           "params": "rr=3.0,htf_min=0",
-          "bars_ago": 0,
-          "is_latest_bar": true,
+          "bars_ago": 1,
+          "is_latest_bar": false,
           "signal_bar": "2026-11-04 02:00",
           "close": 363557,
           "stop": 361112,
@@ -1233,53 +1233,6 @@
             "max_drawdown_pct": 96.11,
             "p_vs_random": 0.535,
             "edge_vs_random_r": -0.009,
-            "reliability": "低（検証期間で期待値が明確に負）",
-            "oos_from": "2026-01-20",
-            "oos_to": "2026-10-17",
-            "available": true,
-            "has_edge": false
-          },
-          "plan": {
-            "entry": 363557,
-            "stop": 361112,
-            "target": 370891,
-            "stop_pct": 0.75,
-            "target_pct": 1.94,
-            "amount_jpy": 800000,
-            "qty": 2.198721,
-            "pnl_at_target_jpy": 13063,
-            "pnl_at_stop_jpy": -9675,
-            "net_rr": 1.35,
-            "fees_round_trip_jpy": 2400,
-            "flags": [
-              "損切り幅 0.75% < 1.0%（手数料負けしやすい。検証で確認済みの弱点）",
-              "手数料込みRR 1.35 < 1.5"
-            ]
-          }
-        },
-        {
-          "strategy": "B_30m",
-          "name": "30分足の安値切り上げ",
-          "timeframe": "30m",
-          "params": "rr=3.0,htf_min=0",
-          "bars_ago": 2,
-          "is_latest_bar": false,
-          "signal_bar": "2026-11-04 00:30",
-          "close": 364310,
-          "stop": 359189,
-          "target": 379674,
-          "max_hold_bars": 96,
-          "backtest": {
-            "trades": 142,
-            "win_rate": 0.31,
-            "expectancy_r": -0.758,
-            "expectancy_jpy": -3467.0,
-            "ci95_r_low": -0.997,
-            "ci95_r_high": -0.512,
-            "profit_factor": 0.44,
-            "max_drawdown_pct": 62.34,
-            "p_vs_random": 0.66,
-            "edge_vs_random_r": -0.048,
             "reliability": "低（検証期間で期待値が明確に負）",
             "oos_from": "2026-01-20",
             "oos_to": "2026-10-17",
@@ -1383,12 +1336,11 @@
       "decision": "見送り",
       "recommended_amount_jpy": 0,
       "reasons": [
-        "B_15m 15分足の安値切り上げ のシグナルあり。ただし 検証で優位性が未確認（低（検証期間で期待値が明確に負））、手数料込みRR 1.35",
         "C 抵抗線突破後の押し目買い のシグナルあり。ただし 検証で優位性が未確認（低（検証期間で期待値が明確に負））、手数料込みRR 0.93",
         "E 4時間足のトレンド転換 のシグナルあり。ただし 検証で優位性が未確認（低（取引 21 回 < 30。統計的に判断できない））",
         "この銘柄で、ウォークフォワード検証で期待値が正と確認できた戦略が1つも無い"
       ],
-      "data_as_of": "2026-11-04 02:15"
+      "data_as_of": "2026-11-04 02:30"
     }
   },
   "btc_vs_eth": {
@@ -1401,12 +1353,12 @@
     "relatively_stronger_30d": "BTC（ETH/BTC 比の30日変化 -7.52%）",
     "by_product": {
       "BTC_JPY": {
-        "trend_score_sum": 8,
+        "trend_score_sum": 7,
         "decision": "見送り",
         "atr_pct_1h": 0.487
       },
       "ETH_JPY": {
-        "trend_score_sum": 14,
+        "trend_score_sum": 12,
         "decision": "見送り",
         "atr_pct_1h": 0.655
       }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17 19:16",
+  "generated_at": "2026-11-17 19:32",
   "disclaimer": "個人の検証用の機械的な出力。投資助言ではない。取引所への注文は行わない。",
   "rules": {
     "buy_requires": "検証で信頼性『中』の戦略のシグナルが最新確定足で出ている・手数料込みRR>=1.5・中期が下降でない・データ正常",
@@ -12,24 +12,24 @@
     "held_value": 0,
     "available": 800000
   },
-  "backtest_generated_at": "2026-11-16 19:16",
+  "backtest_generated_at": "2026-11-17 19:31",
   "products": {
     "BTC_JPY": {
       "product": "BTC_JPY",
       "latest_closed": {
         "5m": {
-          "bar": "2026-11-17 19:10",
-          "close": 10231674.0,
+          "bar": "2026-11-17 19:25",
+          "close": 10209139.0,
           "source": "bitflyer"
         },
         "15m": {
-          "bar": "2026-11-17 19:00",
-          "close": 10231674.0,
+          "bar": "2026-11-17 19:15",
+          "close": 10209139.0,
           "source": "bitflyer"
         },
         "30m": {
-          "bar": "2026-11-17 18:30",
-          "close": 10232867.0,
+          "bar": "2026-11-17 19:00",
+          "close": 10209139.0,
           "source": "bitflyer"
         },
         "1h": {
@@ -399,7 +399,7 @@
             "profit_factor": 0.56,
             "max_drawdown_pct": 70.02,
             "p_vs_random": 0.32,
-            "edge_vs_random_r": 0.063,
+            "edge_vs_random_r": 0.064,
             "reliability": "低（検証期間で期待値が明確に負）",
             "oos_from": "2026-01-20",
             "oos_to": "2026-11-16",
@@ -508,7 +508,7 @@
             "profit_factor": 0.56,
             "max_drawdown_pct": 70.02,
             "p_vs_random": 0.32,
-            "edge_vs_random_r": 0.063,
+            "edge_vs_random_r": 0.064,
             "reliability": "低（検証期間で期待値が明確に負）",
             "oos_from": "2026-01-20",
             "oos_to": "2026-11-16",
@@ -525,24 +525,24 @@
         "中期（1h/4h）が下降。現物ロングのみなので逆風",
         "この銘柄で、ウォークフォワード検証で期待値が正と確認できた戦略が1つも無い"
       ],
-      "data_as_of": "2026-11-17 19:15"
+      "data_as_of": "2026-11-17 19:31"
     },
     "ETH_JPY": {
       "product": "ETH_JPY",
       "latest_closed": {
         "5m": {
-          "bar": "2026-11-17 19:10",
-          "close": 286026.0,
+          "bar": "2026-11-17 19:25",
+          "close": 285416.0,
           "source": "bitflyer"
         },
         "15m": {
-          "bar": "2026-11-17 19:00",
-          "close": 286026.0,
+          "bar": "2026-11-17 19:15",
+          "close": 285416.0,
           "source": "bitflyer"
         },
         "30m": {
-          "bar": "2026-11-17 18:30",
-          "close": 288000.0,
+          "bar": "2026-11-17 19:00",
+          "close": 285416.0,
           "source": "bitflyer"
         },
         "1h": {
@@ -939,7 +939,7 @@
             "ci95_r_high": -0.201,
             "profit_factor": 0.56,
             "max_drawdown_pct": 70.28,
-            "p_vs_random": 0.33,
+            "p_vs_random": 0.325,
             "edge_vs_random_r": 0.047,
             "reliability": "低（検証期間で期待値が明確に負）",
             "oos_from": "2026-01-20",
@@ -1034,7 +1034,7 @@
         "中期（1h/4h）が下降。現物ロングのみなので逆風",
         "この銘柄で、ウォークフォワード検証で期待値が正と確認できた戦略が1つも無い"
       ],
-      "data_as_of": "2026-11-17 19:15"
+      "data_as_of": "2026-11-17 19:31"
     }
   },
   "btc_vs_eth": {
@@ -1099,12 +1099,12 @@
       "timeframe": "30m",
       "trades": 158,
       "win_rate": 0.253,
-      "expectancy_r": -0.948,
-      "ci95_r_low": -1.203,
-      "ci95_r_high": -0.699,
+      "expectancy_r": -0.943,
+      "ci95_r_low": -1.198,
+      "ci95_r_high": -0.694,
       "profit_factor": 0.44,
-      "total_net_jpy": -482933.0,
-      "max_drawdown_pct": 60.37,
+      "total_net_jpy": -482758.0,
+      "max_drawdown_pct": 60.34,
       "p_vs_random": 0.56,
       "reliability": "低（検証期間で期待値が明確に負）"
     },
@@ -1201,7 +1201,7 @@
       "profit_factor": 0.56,
       "total_net_jpy": -562257.0,
       "max_drawdown_pct": 70.28,
-      "p_vs_random": 0.33,
+      "p_vs_random": 0.325,
       "reliability": "低（検証期間で期待値が明確に負）"
     },
     {

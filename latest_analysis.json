@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25 21:16",
+  "generated_at": "2026-11-25 21:32",
   "disclaimer": "個人の検証用の機械的な出力。投資助言ではない。取引所への注文は行わない。",
   "rules": {
     "buy_requires": "検証で信頼性『中』の戦略のシグナルが最新確定足で出ている・手数料込みRR>=1.5・中期が下降でない・データ正常",
@@ -12,24 +12,24 @@
     "held_value": 0,
     "available": 800000
   },
-  "backtest_generated_at": "2026-11-24 21:16",
+  "backtest_generated_at": "2026-11-25 21:31",
   "products": {
     "BTC_JPY": {
       "product": "BTC_JPY",
       "latest_closed": {
         "5m": {
-          "bar": "2026-11-25 21:10",
-          "close": 9314815.0,
+          "bar": "2026-11-25 21:25",
+          "close": 9335620.0,
           "source": "bitflyer"
         },
         "15m": {
-          "bar": "2026-11-25 21:00",
-          "close": 9314815.0,
+          "bar": "2026-11-25 21:15",
+          "close": 9335620.0,
           "source": "bitflyer"
         },
         "30m": {
-          "bar": "2026-11-25 20:30",
-          "close": 9329533.0,
+          "bar": "2026-11-25 21:00",
+          "close": 9335620.0,
           "source": "bitflyer"
         },
         "1h": {
@@ -51,7 +51,7 @@
       "trend_by_timeframe": {
         "5m": {
           "label": "下降",
-          "score": -5,
+          "score": -4,
           "structure": "高値・安値とも切り下げ（下降構造）"
         },
         "15m": {
@@ -527,24 +527,24 @@
         "中期（1h/4h）が下降。現物ロングのみなので逆風",
         "この銘柄で、ウォークフォワード検証で期待値が正と確認できた戦略が1つも無い"
       ],
-      "data_as_of": "2026-11-25 21:15"
+      "data_as_of": "2026-11-25 21:31"
     },
     "ETH_JPY": {
       "product": "ETH_JPY",
       "latest_closed": {
         "5m": {
-          "bar": "2026-11-25 21:10",
-          "close": 260955.0,
+          "bar": "2026-11-25 21:25",
+          "close": 261750.0,
           "source": "bitflyer"
         },
         "15m": {
-          "bar": "2026-11-25 21:00",
-          "close": 260955.0,
+          "bar": "2026-11-25 21:15",
+          "close": 261750.0,
           "source": "bitflyer"
         },
         "30m": {
-          "bar": "2026-11-25 20:30",
-          "close": 260801.0,
+          "bar": "2026-11-25 21:00",
+          "close": 261750.0,
           "source": "bitflyer"
         },
         "1h": {
@@ -565,14 +565,14 @@
       },
       "trend_by_timeframe": {
         "5m": {
-          "label": "下降",
-          "score": -5,
-          "structure": "高値・安値とも切り下げ（下降構造）"
+          "label": "やや下降",
+          "score": -3,
+          "structure": "高値切り下げ・安値切り上げ（収束）"
         },
         "15m": {
           "label": "やや下降",
-          "score": -2,
-          "structure": "高値・安値とも切り上げ（上昇構造）"
+          "score": -3,
+          "structure": "高値切り上げ・安値切り下げ（拡散）"
         },
         "30m": {
           "label": "下降",
@@ -1018,7 +1018,7 @@
         "中期（1h/4h）が下降。現物ロングのみなので逆風",
         "この銘柄で、ウォークフォワード検証で期待値が正と確認できた戦略が1つも無い"
       ],
-      "data_as_of": "2026-11-25 21:15"
+      "data_as_of": "2026-11-25 21:31"
     }
   },
   "btc_vs_eth": {
@@ -1031,12 +1031,12 @@
     "relatively_stronger_30d": "BTC（ETH/BTC 比の30日変化 -3.49%）",
     "by_product": {
       "BTC_JPY": {
-        "trend_score_sum": -27,
+        "trend_score_sum": -26,
         "decision": "見送り",
         "atr_pct_1h": 0.911
       },
       "ETH_JPY": {
-        "trend_score_sum": -24,
+        "trend_score_sum": -23,
         "decision": "見送り",
         "atr_pct_1h": 0.98
       }
